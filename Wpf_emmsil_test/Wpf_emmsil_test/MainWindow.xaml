@@ -1,0 +1,11 @@
+﻿<Window x:Class="Wpf_emmsil_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Uc="clr-namespace:Wpf_emmsil_test.usercontrols"
+        Title="MainWindow" Height="387.321" Width="1147.131">
+    <StackPanel Orientation="Horizontal">
+        <Uc:CustomerControl x:Name="customer_ctrl"/>
+        <Uc:VendingMachineControl1 x:Name="vending_ctrl" Width="494"/>
+        <Uc:CustomerControl x:Name="vmachineWallet_ctrl"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="Wpf_emmsil_test.usercontrols.VendingMachineControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" Width="434">
+    <StackPanel Orientation="Horizontal">
+        <DockPanel>
+            <Label DockPanel.Dock="Top" Content="Внесено:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30"/>
+            <TextBox DockPanel.Dock="Top" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding DBalance, Mode=OneWay}" IsReadOnly="True" VerticalAlignment="Top" Width="120"/>
+            <Button DockPanel.Dock="Top" Content="Отмена" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_Cancel"/>
+        </DockPanel>
+        <ListView  Name="listview_goods"
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="#FF0004E5" BorderBrush="#FFE8E8E8" 
+                             ItemsSource="{Binding ItemsList}">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="FontSize" Value="13"/>
+                    <!--<Setter Property="Height" Value="40" />-->
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+
+            <ListView.View>
+                <GridView AllowsColumnReorder="true">
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style  TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="Background" Value="Yellow" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+
+                    <GridViewColumn Header="Товар"
+                                        Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}" FontSize="15" TextAlignment="Center"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn  
+                                Width="80"
+                                Header="Цена">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Value}" FontSize="15" TextAlignment="Center"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn  
+                                Width="80"
+                                Header="Количество">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Count}" FontSize="15" TextAlignment="Center"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn  
+                                Width="80"
+                                Header="Действие">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Купить" Tag="{Binding Ttype}" Click="Button_Click_Buy"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</UserControl>

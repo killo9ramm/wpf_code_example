@@ -1,0 +1,14 @@
+E:\projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+E:\projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+E:\projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\Wpf_emmsil_test.exe
+E:\projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\Wpf_emmsil_test.pdb
+E:\projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+E:\projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+E:\projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\Wpf_emmsil_test.exe
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\bin\Debug\Wpf_emmsil_test.pdb
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Projects\Wpf_emmsil_test\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
